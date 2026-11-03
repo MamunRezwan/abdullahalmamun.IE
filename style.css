@@ -1329,3 +1329,37 @@ textarea {
         transform: rotate(360deg);
     }
 }
+
+/* Mobile Hero Layout Fix */
+@media (max-width: 600px) {
+
+    /* Give enough space for IE Circle and Profile Photo */
+    .image-card {
+        width: 290px;
+        height: 480px;
+        align-items: flex-end;
+        padding-bottom: 25px;
+    }
+
+    /* IE Circle stays at the top of image-card */
+    .ie-orbit {
+        width: 210px;
+        height: 210px;
+        top: 0 !important;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 5;
+    }
+
+    /* Move profile photo below IE Circle */
+    .image-circle {
+        width: 210px;
+        height: 210px;
+        flex-shrink: 0;
+    }
+
+    .avatar-placeholder {
+        width: 155px;
+        height: 155px;
+    }
+}
