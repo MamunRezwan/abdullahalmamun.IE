@@ -1330,36 +1330,29 @@ textarea {
     }
 }
 
-/* Mobile Hero Layout Fix */
+/* Mobile Hero Orbit Fix */
 @media (max-width: 600px) {
 
-    /* Give enough space for IE Circle and Profile Photo */
-    .image-card {
-        width: 290px;
-        height: 480px;
-        align-items: flex-end;
-        padding-bottom: 25px;
+    .hero-image {
+        margin-top: 30px;
+        padding-top: 95px;
+        margin-bottom: 35px;
     }
 
-    /* IE Circle stays at the top of image-card */
     .ie-orbit {
-        width: 210px;
-        height: 210px;
-        top: 0 !important;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 5;
+        width: 170px;
+        height: 170px;
+        top: -90px;
     }
 
-    /* Move profile photo below IE Circle */
-    .image-circle {
-        width: 210px;
-        height: 210px;
-        flex-shrink: 0;
+    .orbit-center {
+        width: 58px;
+        height: 58px;
+        font-size: 21px;
     }
 
-    .avatar-placeholder {
-        width: 155px;
-        height: 155px;
+    .hero {
+        padding-bottom: 100px;
     }
+
 }
