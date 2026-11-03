@@ -1243,3 +1243,89 @@ textarea {
         font-size: 13px;
     }
 }
+
+/* =========================
+   IE ORBIT DESIGN
+========================= */
+
+.ie-orbit {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    top: -180px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 5;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Static Complete Outer Circle */
+.orbit-ring {
+    position: absolute;
+    inset: 0;
+    border: 4px solid #FDAF00;
+    border-radius: 50%;
+    background: #FDAF00;
+    box-shadow: 0 0 18px rgba(253, 175, 0, 0.35);
+    z-index: 1;
+}
+
+/* SVG Curved Text */
+.orbit-labels {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    overflow: visible;
+}
+
+/* Text Group Rotation */
+.orbit-text-group {
+    transform-box: view-box;
+    transform-origin: center;
+    animation: orbitTextRotate 18s linear infinite;
+}
+
+/* Curved Text Styling */
+.orbit-labels text {
+    fill: #FFFFFF;
+    font-family: "Poppins", sans-serif;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+}
+
+/* Static IE Center */
+.orbit-center {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--dark);
+    color: #ffffff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 25px;
+    font-weight: 800;
+
+    z-index: 6;
+    border: 3px solid var(--primary);
+}
+
+/* Only Curved Text Rotates */
+@keyframes orbitTextRotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
