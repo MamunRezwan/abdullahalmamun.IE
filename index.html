@@ -967,7 +967,7 @@
 
 <section class="contact section" id="contact">
 
-<div class="container">
+    <div class="container">
 
         <div class="section-heading center">
 
@@ -982,7 +982,6 @@
             </p>
 
         </div>
-
 
         <div class="contact-grid">
 
@@ -999,7 +998,6 @@
                     operational efficiency.
                 </p>
 
-
                 <div class="contact-item">
 
                     <div>
@@ -1014,7 +1012,6 @@
                     </div>
 
                 </div>
-
 
                 <div class="contact-item">
 
@@ -1033,7 +1030,6 @@
 
                 </div>
 
-
                 <div class="contact-item">
 
                     <div>
@@ -1051,7 +1047,6 @@
 
             </div>
 
-
             <form class="contact-form" id="contactForm">
 
                 <div class="form-row">
@@ -1063,12 +1058,12 @@
                         <input
                             type="text"
                             id="name"
+                            name="name"
                             placeholder="Your Name"
                             required
                         >
 
                     </div>
-
 
                     <div class="form-group">
 
@@ -1077,6 +1072,7 @@
                         <input
                             type="email"
                             id="email"
+                            name="email"
                             placeholder="Your Email"
                             required
                         >
@@ -1085,7 +1081,6 @@
 
                 </div>
 
-
                 <div class="form-group">
 
                     <label>Subject</label>
@@ -1093,12 +1088,12 @@
                     <input
                         type="text"
                         id="subject"
+                        name="subject"
                         placeholder="Job Opportunity / Professional Inquiry"
                         required
                     >
 
                 </div>
-
 
                 <div class="form-group">
 
@@ -1106,6 +1101,7 @@
 
                     <textarea
                         id="message"
+                        name="message"
                         rows="6"
                         placeholder="Write your message here..."
                         required
@@ -1113,8 +1109,7 @@
 
                 </div>
 
-
-                <button type="submit" class="primary-btn">
+                <button type="submit" class="primary-btn" id="submitBtn">
 
                     Send Message
                     <i class="fas fa-paper-plane"></i>
