@@ -1272,6 +1272,13 @@ textarea {
     box-shadow: 0 0 18px rgba(253, 175, 0, 0.35);
     z-index: 1;
 }
+/* About Section Button Size Fix */
+#about .about-content > .primary-btn {
+    align-self: flex-start;
+    width: fit-content;
+    padding: 12px 24px;
+    font-size: 15px;
+}
 
 /* SVG Curved Text */
 .orbit-labels {
