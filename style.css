@@ -1363,3 +1363,11 @@ textarea {
     }
 
 }
+
+/* About Section Button Size Fix */
+#about .about-content > .primary-btn {
+    align-self: flex-start;
+    width: fit-content;
+    padding: 12px 24px;
+    font-size: 15px;
+}
